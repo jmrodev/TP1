@@ -9,8 +9,8 @@ let aleatorio = random(100, 999);
 let mensaje_captcha = document.querySelector("#mensaje_captcha");
 mensaje_captcha.innerHTML = "ingrese el numero siguiente " + aleatorio;
 
-function ingresoCaptcha(e) {
-    e.preventDefault();
+function ingresoCaptcha() {
+   
     let entrada = document.querySelector("#form_input");
     let data_captcha = entrada.value;
     let numero_captcha = parseInt(data_captcha);
