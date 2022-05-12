@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "FasterOne";
+  src: url("fonts/Faster_One/FasterOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "GFSDidot";
+  src: url("fonts/GFS_Didot/GFSDidot-Regular.ttf");
+}
+* {
+  margin: 0;
+ 
+}
+h1,
+h2,
+h3,
+a,
+p {
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-family: "GFSDidot";
+  font-size: 1.2rem;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+.letra {
+  font-family: "FasterOne";
+  font-size: 4rem;
+  text-align: center;
+}
+header{
+  background: rgb(42,132,126);
+  background: linear-gradient(90deg, rgba(42,132,126,0.9528186274509804) 10%, rgba(28, 28, 124, 0.933) 60%, rgba(15, 55, 78, 0.94) 95%);
+  }
+  header img{
+    width: 100%;
+    height: 100%;
+  }
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(11, 59, 59, 1);
+  padding: 1.5rem;
+  width: 15em;
+}
+
+article {
+  background-color: rgba(19, 71, 14, 0.5);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.5em;
+  letter-spacing: 0.5em;
+  background-color: rgba(42, 132, 126, 1);
+}
+.container-foto {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5rem auto;
+}
+.container-lista {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 50rem;
+}
+#texto-presentacion {
+  font-size: 2rem;
+  margin: 2rem 5rem;
+}
+.main-content {
+  width: 100%;
+  display: flex;
+}
+.container-central {
+  padding: 1.8rem;
+  width: inherit;
+  background-color: rgb(11, 59, 59);
+}
+
+.container-tabla {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.img-producto {
+  background-color: rgba(22, 111, 105, 1);
+  border-radius: .5rem;
+  width: 17rem;
+  height: 17rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.img-presentacion {
+  width: 20rem;
+  padding: 0.5rem;
+  margin: 5rem 1rem;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2rem;
+}
+.letra {
+  font-family: "FasterOne";
+  font-style: oblique;
+  background: -webkit-linear-gradient(
+    rgba(250, 1, 1, 0.699),
+    rgb(255, 136, 0),
+    rgba(238, 255, 0, 0.856)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.product {
+  max-width: 80%;
+  max-height: 80%;
+  min-width: 50%;
+  min-height: 50%;
+}
+div.container-foto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+input {
+  border-radius: .5rem;
+  border: none;
+  background-color: rgba(22, 111, 105, 1);
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3cbc8d;
+  color: white;
+}
+.formulario {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem 8rem;
+  font-family: "GFSDidot";
+  width: 80%;
+  margin-bottom: 5rem;
+}
+div.main-content > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-family: "GFSDidot";
+  width: 80%;
+  
+}
+ul,
+ol,
+dl {
+  font-size: 1.5rem;
+}
+
+li,
+p {
+  line-height: 1.5;
+  font-family: "GFSDidot";
+  color: rgb(255, 255, 255);
+}
+
+/* tabla */
+#customers {
+  font-family: "GFSDidot";
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: .0625rem solid #ddd;
+  padding: .5rem;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #1a686b;
+}
+
+#customers tr:hover {
+  background-color: rgb(123, 163, 50);
+}
+
+#customers th {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.foto-eventos {
+  width: 40%;
+  height: 40%;
+  margin-top: 1rem;
+}
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: rgb(196, 160, 160);
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-family: "GFSDidot";
+  margin: .25rem .125rem;
+  transition-duration: 1s;
+  cursor: pointer;
+  background-color: rgb(16, 68, 36);
+  color: rgb(250, 250, 250);
+  border: .125rem solid #01471e;
+  border-radius: 1.375rem;
+}
+
+.button1:hover {
+  background-color: #555555;
+  color: white;
+}
+.login{
+  background-color: #93c095; /* Green */
+  border: none;
+  border-radius: 1rem;
+  color: rgb(34, 30, 30);
+  ;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  width: 60%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* login */
+
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+} 
+#popupBody {
+  width: 46%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #ccc;
+  background: rgb(113, 168, 111);
+  position: relative;
+  margin: 20% auto;
+  transition: all 3s ease-in-out;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(44, 201, 127);
+
+  transition: all 200ms;
+}
