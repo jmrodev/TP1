@@ -1,34 +1,24 @@
 "use strict";
-let form  = document.querySelector("#btn_captcha");
-form.addEventListener("click", ingresoCaptcha);
 
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+function random(min, max) {return Math.floor(Math.random() * (max - min + 1) + min);}
 let aleatorio = random(100, 999);
 
 let mensaje_captcha = document.querySelector("#mensaje_captcha");
-mensaje_captcha.innerHTML = "Ingrese el siguiente " + aleatorio +" numero para verificar";
+mensaje_captcha.innerHTML ="Ingrese el siguiente " + aleatorio + " numero para verificar";
 
-function ingresoCaptcha(e) {
-  e.preventDefault();
-  let entrada = document.querySelector("#form_input");
-  let data_captcha = entrada.value;
-  let numero_captcha = parseInt(data_captcha);
-  let resultado_captcha = numero_captcha === aleatorio;
+let visible = document.querySelector("#btn_aceptar");
+visible.addEventListener("click", mostrar);
 
-  if (resultado_captcha) {
-    captchaCorrecto();
+function mostrar() {
+  let numero_captcha = parseInt(document.querySelector("#form_input").value);
+  if (numero_captcha === aleatorio) {
+    let entrada = document.querySelector("#mensaje_captcha");
+    entrada.innerHTML = "Usted ingreso el captcha correctamente";
+    document.querySelector("#btn_captcha").style.visibility = "visible";
+    document.querySelector("#btn_aceptar").style.visibility = "hidden";
   } else {
-    captchaIncorrecto();
+    let entrada = document.querySelector("#mensaje_captcha");
+    entrada.innerHTML = "Debes intentar nuevamente";
+    setTimeout("location.reload()", 2000);
   }
-}
-
-function captchaCorrecto() {
-  let entrada = document.querySelector("#mensaje_captcha");
-  entrada.innerHTML = "Usted ingreso el captcha correctamente";
-}
-function captchaIncorrecto() {
-  let entrada = document.querySelector("#mensaje_captcha");
-  entrada.innerHTML = "Debes intentar nuevamente";
 }
